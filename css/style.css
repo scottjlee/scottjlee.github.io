@@ -221,8 +221,9 @@ button:hover,
 }
 
 .footer-padding {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 /* =Typography
@@ -1635,6 +1636,10 @@ span.portfolio-hover a {
     -webkit-box-shadow: none !important;
 }
 
+#contact {
+    margin-bottom: -5%;
+}
+
 #contact .has-error .form-control {
     border-color: #2F2F2F;
 }
@@ -1673,7 +1678,8 @@ span.portfolio-hover a {
 }
 
 .contactphoto {
-    width: 90%;
+    width: 60%;
+    margin: 0 0 -10% 30%;
 }
 
 /* =Footer
@@ -1740,6 +1746,7 @@ footer hr {
 
 .footer-brand {
     padding: 0;
+    padding-bottom: 15px;
     width: 15%;
 }
 
