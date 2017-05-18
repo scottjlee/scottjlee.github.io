@@ -311,7 +311,7 @@ i {
 
 strong,
 b {
-    font-weight: bold;
+    font-weight: 600;
     line-height: inherit
 }
 
@@ -737,7 +737,8 @@ ul.no-list-style {
     font-family: "Montserrat", sans-serif;
     font-size: .875rem;
     text-transform: uppercase;
-    color: #fff
+    color: #fff;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 540px) {
