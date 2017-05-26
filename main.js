@@ -62,7 +62,7 @@ $(window).on("scroll resize", function(){
         		$(".button-text").html("Contact me");
         	} else if ($(this).attr('class').slice(-4) === "pic2") { // show photo portfolio
         		$(".title-main").html("I love shooting things.");
-        		$(".title-sub").html("Whether it's people, places, or food, I always strive to make everything look perfect.");
+        		$(".title-sub").html("Whether it's people or places, I always strive to make everything look perfect.");
         		$(".button-link").attr("href", "https://www.flickr.com/photos/tortlelee/");
         		$(".button-link").attr("target", "_blank");
         		$(".button-text").html("Portfolio");
