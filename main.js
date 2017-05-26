@@ -64,6 +64,7 @@ $(window).on("scroll resize", function(){
         		$(".title-main").html("I love shooting things.");
         		$(".title-sub").html("Whether it's people, places, or food, I always strive to make everything look perfect.");
         		$(".button-link").attr("href", "https://www.flickr.com/photos/tortlelee/");
+        		$(".button-link").attr("target", "_blank");
         		$(".button-text").html("Portfolio");
         	}
         	$(".spacer-block").css('background-image', newPicName);
