@@ -408,7 +408,7 @@ ul.no-list-style {
     margin: 0
 }
 
-.content__tag-wrapper {
+.subtitle-wrapper {
     float: left;
     width: 5.625rem;
     margin: 0 1.5625rem 0 0;
@@ -416,13 +416,13 @@ ul.no-list-style {
 }
 
 @media screen and (max-width: 1024px) {
-    .content__tag-wrapper {
+    .subtitle-wrapper {
         display: inline-block;
         float: none
     }
 }
 
-.content__tag {
+.subtitle {
     background-color: #2CA8FF;
     width: auto;
     font-size: .75rem;
@@ -438,43 +438,43 @@ ul.no-list-style {
     -webkit-text-fill-color: transparent
 }
 
-.content__inner {
+.section-content {
     width: 75%;
     max-width: 33.75rem;
     float: left
 }
 
 @media screen and (max-width: 1140px) {
-    .content__inner {
+    .section-content {
         width: 100%;
         max-width: 100%
     }
 }
 
-.content__inner p {
+.section-content p {
     font-size: .9375rem;
     line-height: 1.818;
     font-weight: 300;
     margin: 0
 }
-.content__inner a {
+.section-content a {
     color: blue;
 }
 
 @media screen and (max-width: 1024px) {
-    .content__inner {
+    .section-content {
         width: 100%;
         display: block;
         float: none
     }
 }
 
-.content--about p,
+.about-skills p,
 .content--cv p {
     margin: 0 0 .5rem
 }
 
-.content--about em,
+.about-skills em,
 .content--cv em {
     color: #bebece;
     font-style: normal;
@@ -482,7 +482,7 @@ ul.no-list-style {
     padding-left: .625rem
 }
 
-.content--about em::before,
+.about-skills em::before,
 .content--cv em::before {
     position: absolute;
     content: "";
@@ -494,7 +494,7 @@ ul.no-list-style {
     border-radius: 50%
 }
 
-.content--about a,
+.about-skills a,
 .content--cv a {
     position: relative;
     overflow: hidden;
@@ -591,7 +591,7 @@ ul.no-list-style {
     height: 100%
 }
 
-.block--left {
+.left {
     text-align: center;
     overflow: hidden;
     position: fixed;
@@ -600,7 +600,7 @@ ul.no-list-style {
 }
 
 @media screen and (max-width: 768px) {
-    .block--left {
+    .left {
         background-color: #4dfeee;
         width: 100%;
         height: 70vh;
@@ -608,21 +608,21 @@ ul.no-list-style {
     }
 }
 
-.block--right {
+.right-block {
     height: auto;
     position: absolute;
     right: 0
 }
 
 @media screen and (max-width: 768px) {
-    .block--right {
+    .right-block {
         width: 100%;
         height: auto;
         position: static
     }
 }
 
-.block__bgi {
+.spacer-block {
     position: absolute;
     top: 0;
     left: 0;
@@ -635,7 +635,7 @@ ul.no-list-style {
     opacity: 0
 }
 
-.block__bgi::before {
+.spacer-block::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -647,24 +647,24 @@ ul.no-list-style {
 }
 
 @media screen and (max-width: 768px) {
-    .block__bgi {
+    .spacer-block {
         background-repeat: no-repeat;
         z-index: 0
     }
 }
 
 @media screen and (max-width: 540px) {
-    .block__bgi {
+    .spacer-block {
         background-size: 90%;
         background-position: center bottom
     }
 }
 
-.block-content {
-    margin: 30% 0 0
+.content-block {
+    margin: 18% 0 0
 }
 
-.block__title {
+.title-block {
     overflow: hidden;
     color: #fff;
     line-height: 1.35;
@@ -673,62 +673,62 @@ ul.no-list-style {
     z-index: 1
 }
 
-.block__title:nth-child(1) {
+.title-block:nth-child(1) {
     font-size: 1.5rem
 }
 
 @media screen and (max-width: 1320px) {
-    .block__title:nth-child(1) {
+    .title-block:nth-child(1) {
         font-size: 1.375rem
     }
 }
 
 @media screen and (max-width: 540px) {
-    .block__title:nth-child(1) {
+    .title-block:nth-child(1) {
         font-size: 1rem
     }
 }
 
-.block__title:nth-child(2) {
+.title-block:nth-child(2) {
     font-size: 1.25rem;
     max-width: 25rem;
     margin: .25rem auto 1.75rem
 }
 
 @media screen and (max-width: 1320px) {
-    .block__title:nth-child(2) {
+    .title-block:nth-child(2) {
         font-size: 1.125rem;
         max-width: 21.25rem
     }
 }
 
 @media screen and (max-width: 540px) {
-    .block__title:nth-child(2) {
+    .title-block:nth-child(2) {
         font-size: .875rem;
         max-width: 16.875rem
     }
 }
 
-.block__title span {
+.title-block span {
     opacity: 0;
     display: block;
     color: #fff
 }
 
-.block__title em {
+.title-block em {
     color: #3ee6bf;
     font-style: normal;
     position: relative;
 }
 
-.block__cta {
+.contact-block {
     display: inline-block;
     overflow: hidden;
     position: relative;
     vertical-align: bottom
 }
 
-.block__cta a {
+.contact-block a {
     display: inline-block;
     opacity: 0;
     z-index: 10;
@@ -742,17 +742,17 @@ ul.no-list-style {
 }
 
 @media screen and (max-width: 540px) {
-    .block__cta a {
+    .contact-block a {
         font-size: .75rem
     }
 }
 
-.block__cta a span {
+.contact-block a span {
     position: relative;
     z-index: 20
 }
 
-.block__cta a:before {
+.contact-block a:before {
     -webkit-transition: all 0.15s;
     -moz-transition: all 0.15s;
     transition: all 0.15s;
@@ -768,7 +768,7 @@ ul.no-list-style {
     display: block
 }
 
-.block__cta a:hover:before {
+.contact-block a:hover:before {
     -webkit-transform: scale(1.08);
     -moz-transform: scale(1.08);
     -ms-transform: scale(1.08);
@@ -776,13 +776,13 @@ ul.no-list-style {
     transform: scale(1.08)
 }
 
-.block__inner {
+.inner-block {
     padding: 3.125rem;
     width: 100%;
     height: 100%
 }
 
-.block--left .block__inner {
+.left .inner-block {
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -822,10 +822,10 @@ ul.no-list-style {
 }
 
 @media screen and (max-width: 768px) {
-    .block__inner {
+    .inner-block {
         padding: 1.5625rem
     }
-    .block--left .block__inner {
+    .left .inner-block {
         -webkit-box-pack: end;
         -moz-box-pack: end;
         box-pack: end;
