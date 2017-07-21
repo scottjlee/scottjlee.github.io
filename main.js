@@ -59,6 +59,7 @@ $(window).on("scroll resize", function(){
         		$(".title-main").html("Hey, I'm Scott.");
         		$(".title-sub").html("I'm a front-end engineer gone <b>data scientist</b>.");
         		$(".button-link").attr("href", "#section-contact");
+        		$(".button-link").attr("target", "");
         		$(".button-text").html("Contact me");
         	} else if ($(this).attr('class').slice(-4) === "pic2") { // show photo portfolio
         		$(".title-main").html("I love shooting things.");
@@ -68,8 +69,7 @@ $(window).on("scroll resize", function(){
         		$(".button-text").html("Portfolio");
         	}
         	$(".spacer-block").css('background-image', newPicName);
-            //$('#date').html($(this).html()); //or any other way you want to get the date
-            return; //break the loop
+            return; 
         }
     });
 });
