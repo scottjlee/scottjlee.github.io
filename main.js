@@ -57,10 +57,10 @@ $(window).on("scroll resize", function(){
         	var newPicName = "url('" + "img/" + $(this).attr('class').slice(-4) + ".jpg')";
         	if ($(this).attr('class').slice(-4) === "pic1") { // show profile picture
         		$(".title-main").html("Hey, I'm Scott.");
-        		$(".title-sub").html("I'm a front-end engineer gone <b>data scientist</b>.");
-        		$(".button-link").attr("href", "#section-contact");
+        		$(".title-sub").html("I'm a front-end engineer gone <b>data scientist.</b>");
+        		$(".button-link").attr("href", "resume.pdf");
         		$(".button-link").attr("target", "");
-        		$(".button-text").html("Contact me");
+        		$(".button-text").html("Resume");
         	} else if ($(this).attr('class').slice(-4) === "pic2") { // show photo portfolio
         		$(".title-main").html("I love shooting things.");
         		$(".title-sub").html("Whether it's people or places, I always strive to make everything look perfect.");
