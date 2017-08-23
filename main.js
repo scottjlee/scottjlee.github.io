@@ -37,43 +37,4 @@ var a,b=I.length;for(J={};--b>-1;)a=I[b],a&&a._lazy!==!1&&(a.render(a._lazy[0],a
 
 var RAFA={init:function(){intro.init()}};$(function(){RAFA.init()});var intro={getElements:function(){$blockLeft=$(".left"),$blockLeftBackground=$blockLeft.find(".spacer-block"),$blockLeftCtaWrapper=$blockLeft.find(".contact-block"),$blockLeftCta=$blockLeft.find(".contact-block a"),blockLeftCtaWidth=$blockLeftCta.width(),$blockLeftTitle=$blockLeft.find(".title-block:eq(0) span"),$blockLeftSocialIcon=$blockLeft.find(".block__social__link"),$blockLeftSub=$blockLeft.find(".title-block:eq(1) span"),$blockRight=$(".right-block"),$content=$(".content")},setElements:function(){TweenMax.set($blockLeft,{xPercent:-100}),TweenMax.set($blockLeftBackground,{xPercent:90}),TweenMax.set($blockLeftCta,{x:2*-blockLeftCtaWidth}),TweenMax.set($blockLeftTitle,{xPercent:-100,autoAlpha:0}),TweenMax.set($blockLeftSub,{xPercent:-100,autoAlpha:0}),TweenMax.set($blockLeftSocialIcon,{autoAlpha:0}),TweenMax.set($content,{y:5,autoAlpha:0})},slideIn:function(){var a=new TimelineMax;a.to($blockLeft,.1,{autoAlpha:1}).to($blockLeft,1.2,{xPercent:0,ease:Power4.easeInOut}).to($blockLeftBackground,0,{autoAlpha:1},"-= 1.2").to($blockLeftBackground,1.2,{autoAlpha:1,xPercent:0,ease:Power4.easeInOut},"-= 1.2").to($blockLeftTitle,.7,{xPercent:0,autoAlpha:1,ease:Power4.easeInOut,delay:.5},"-= 1.2").to($blockLeftSub,.7,{xPercent:0,autoAlpha:1,ease:Power4.easeInOut,delay:.55},"-= 1.15").to($blockLeftCta,.7,{x:0,ease:Power4.easeInOut,autoAlpha:1,delay:.55,onCompleteScope:$blockLeftCta,onComplete:intro.setEndState},"-= 1.1").staggerTo($blockLeftSocialIcon,.3,{autoAlpha:1},.05,"-= 0.1").staggerTo($content,.35,{y:0,autoAlpha:1,ease:Sine.easeOut},.1,"-= 0.05")},setEndState:function(){TweenMax.set($blockLeftCtaWrapper,{css:{overflow:"visible"}})},init:function(){intro.getElements(),intro.setElements(),intro.slideIn()}};
 
-// PRELOAD
-var images = new Array()
-function preload() {
-	for (i = 0; i < preload.arguments.length; i++) {
-		images[i] = new Image()
-		images[i].src = preload.arguments[i]
-	}
-}
-preload("img/pic1.jpg", "img/pic2.jpg")
 
-
-// CUSTOM
-$(window).on("scroll resize", function(){
-    var pos=$('.left').offset();
-    $('.content').each(function(){
-        if(pos.top >= $(this).offset().top && pos.top <= $(this).next().offset().top)
-        {
-        	var newPicName = "url('" + "img/" + $(this).attr('class').slice(-4) + ".jpg')";
-        	if ($(this).attr('class').slice(-4) === "pic1") { // show profile picture
-        		$(".title-main").html("Hey, I'm Scott.");
-        		$(".title-sub").html("I'm a front-end engineer gone <b>data scientist.</b>");
-        		$(".button-link").attr("href", "resume.pdf");
-        		$(".button-link").attr("target", "");
-        		$(".button-text").html("Resume");
-        	} else if ($(this).attr('class').slice(-4) === "pic2") { // show photo portfolio
-        		$(".title-main").html("I love shooting things.");
-        		$(".title-sub").html("Whether it's people or places, I always strive to make everything look perfect.");
-        		$(".button-link").attr("href", "https://www.flickr.com/photos/tortlelee/");
-        		$(".button-link").attr("target", "_blank");
-        		$(".button-text").html("Portfolio");
-        	}
-        	$(".spacer-block").css('background-image', newPicName);
-            return; 
-        }
-    });
-});
-
-$(document).ready(function(){
-  $(window).trigger('scroll'); // init the value
-});
