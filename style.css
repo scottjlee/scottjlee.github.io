@@ -1146,7 +1146,12 @@ button:focus {
 }
 
 .row div[class^=col-]:not(.row) {
-    margin-bottom: 30px
+    margin-bottom: 30px;
+
+}
+
+.row.no-bottom {
+    margin-bottom: 0px;
 }
 
 .row .form-row div[class^=col-] {
@@ -1511,8 +1516,8 @@ a.button-reveal-right-white span {
 }
 
 .accordion li.active .accordion-title:after {
-    -webkit-transform: translateY(-50%) rotate(-90deg);
-    transform: translateY(-50%) rotate(-90deg)
+    -webkit-transform: translateY(-50%) rotate(270deg);
+    transform: translateY(-50%) rotate(270deg)
 }
 
 .accordion.style-2 li {
@@ -6296,8 +6301,8 @@ ol li ul {
         transition: linear .1s
     }
     .navbar .nav .nav-item.nav-dropdown .dropdown-menu .sub-dropdown:hover a:after {
-        -webkit-transform: translateY(-50%) rotate(-90deg);
-        transform: translateY(-50%) rotate(-90deg)
+        -webkit-transform: translateY(-50%) rotate(270deg);
+        transform: translateY(-50%) rotate(270deg)
     }
     .navbar .nav .nav-item.nav-dropdown .dropdown-menu .sub-dropdown:hover .sub-dropdown-menu {
         visibility: visible;
@@ -6317,8 +6322,8 @@ ol li ul {
         left: auto
     }
     .navbar .nav .nav-item.nav-dropdown:hover .nav-link:after {
-        -webkit-transform: translateY(-50%) rotate(-90deg);
-        transform: translateY(-50%) rotate(-90deg)
+        -webkit-transform: translateY(-50%) rotate(270deg);
+        transform: translateY(-50%) rotate(270deg)
     }
     .navbar .nav .nav-item.nav-dropdown:hover .dropdown-menu {
         -webkit-transform: translateY(0);
@@ -6390,12 +6395,12 @@ ol li ul {
         background: #646464
     }
     .navbar .nav .nav-item.dropdown-minus .nav-link:after {
-        -webkit-transform: translateY(-50%) rotate(-90deg);
-        transform: translateY(-50%) rotate(-90deg)
+        -webkit-transform: translateY(-50%) rotate(270deg);
+        transform: translateY(-50%) rotate(270deg)
     }
     .navbar .nav .nav-item.dropdown-minus .dropdown-menu .sub-dropdown-minus a:after {
-        -webkit-transform: translateY(-50%) rotate(-90deg);
-        transform: translateY(-50%) rotate(-90deg)
+        -webkit-transform: translateY(-50%) rotate(270deg);
+        transform: translateY(-50%) rotate(270deg)
     }
     .navbar .nav .nav-item.dropdown-minus .dropdown-menu .sub-dropdown-minus .sub-dropdown-menu a {
         color: #141414
@@ -7126,8 +7131,8 @@ ol li ul {
         opacity: 1
     }
     .navbar .nav .nav-item.nav-megadropdown:hover .nav-link:after {
-        -webkit-transform: translateY(-50%) rotate(-90deg);
-        transform: translateY(-50%) rotate(-90deg)
+        -webkit-transform: translateY(-50%) rotate(270deg);
+        transform: translateY(-50%) rotate(270deg)
     }
 }
 
@@ -7149,8 +7154,8 @@ ol li ul {
         background: #646464
     }
     .navbar .nav .nav-item.nav-megadropdown .nav-link-minus:after {
-        -webkit-transform: translateY(-50%) rotate(-90deg);
-        transform: translateY(-50%) rotate(-90deg)
+        -webkit-transform: translateY(-50%) rotate(270deg);
+        transform: translateY(-50%) rotate(270deg)
     }
 }
 
@@ -11413,7 +11418,7 @@ div[class^=bg-black] .prices-box.prices-box-recommended {
 
 .section,
 .section-md {
-    padding: 100px 0
+    padding: 40px 0
 }
 
 .section-md.bg-image .container,
@@ -11424,7 +11429,7 @@ div[class^=bg-black] .prices-box.prices-box-recommended {
 }
 
 .section-lg {
-    padding: 100px 0 1px 0;
+    padding: 80px 0 1px 0;
     /*padding: 160px 0*/
 }
 
@@ -11459,7 +11464,7 @@ div[class^=bg-black] .prices-box.prices-box-recommended {
     }
     .section,
     .section-md {
-        padding: 80px 0
+        padding: 40px 0
     }
     .section-md.bg-image .container,
     .section-md.bg-image .container-fluid,
@@ -11642,8 +11647,8 @@ div[class^=bg-black] .prices-box.prices-box-recommended {
 }
 
 .sidebar-nav-content .sidebar-menu li a.sidebar-dropdown-link.minus:after {
-    -webkit-transform: translateY(-50%) rotate(-90deg);
-    transform: translateY(-50%) rotate(-90deg)
+    -webkit-transform: translateY(-50%) rotate(270deg);
+    transform: translateY(-50%) rotate(270deg)
 }
 
 .sidebar-nav-content .sidebar-menu .sidebar-dropdown {
@@ -13927,10 +13932,20 @@ div[class^=bg-black] .testimonial-grid-box:before {
     padding-bottom: 30px;
 }
 
+@media (max-width:992px) {
+    .no-bottom {
+        margin-bottom: 0px;
+    }
+}
+
 @media (max-width:768px) {
     .inner-box {
         padding-bottom: 0px;
         margin-bottom: 10px;
+    }
+
+    .no-bottom {
+        margin-bottom: 0px;
     }
 }
 
@@ -13946,21 +13961,20 @@ div[class^=bg-black] .testimonial-grid-box:before {
   vertical-align: middle;
 }
 
-@media (max-width:992px) {
-    
-}
-
-@media (max-width:768px) {
-    /*.block:before {
-      height: 0%; 
-    }*/
-}
-
 .profile-box {
-    max-height: 100%;
+    /*max-height: 100%;*/
 }
 
 .profile-pic {
     box-shadow: 10px 9px 7px 1px #667; 
     max-height: 440px;
 }
+
+.no-bottom {
+    margin-bottom: 0px;
+}
+
+#uniq {
+    margin-bottom: 0px;
+}
+
