@@ -13936,6 +13936,9 @@ div[class^=bg-black] .testimonial-grid-box:before {
     .no-bottom {
         margin-bottom: 0px;
     }
+    #smaller-email {
+        font-size: 93%;
+    }
 }
 
 @media (max-width:768px) {
@@ -13946,6 +13949,9 @@ div[class^=bg-black] .testimonial-grid-box:before {
 
     .no-bottom {
         margin-bottom: 0px;
+    }
+    #smaller-email {
+        font-size: 100%;
     }
 }
 
@@ -13959,10 +13965,6 @@ div[class^=bg-black] .testimonial-grid-box:before {
   display: inline-block;
   height: 100%; 
   vertical-align: middle;
-}
-
-.profile-box {
-    /*max-height: 100%;*/
 }
 
 .profile-pic {
