@@ -13978,3 +13978,6 @@ div[class^=bg-black] .testimonial-grid-box:before {
     margin-bottom: 0px;
 }
 
+.bg-grey {
+    background-color: #f9f9f9;
+}
