@@ -5508,6 +5508,11 @@ body.loaded:after {
     color: #93baf9;
 }
 
+.icon-25 {
+    width: 25px;
+    color: #93baf9;
+}
+
 .teaching-icon {
     margin-left: -4px;
     margin-right: 3.2px;
@@ -5520,6 +5525,10 @@ body.loaded:after {
 
 .science-icon {
     margin-right: 2px;
+}
+
+.question-icon {
+    margin-right: -2px;
 }
 
 .link-underline:hover {
@@ -5587,6 +5596,18 @@ h6.lineheight-25 {
 
 .navbar-title {
     font: 300 24px Heebo, sans-serif;
+}
+
+.top-bump {
+    margin-top: 11px;
+}
+
+.disabled-link {
+    color: #aaa;
+}
+
+.slides {
+    padding-bottom: 70px;
 }
 
 @media (max-width:992px) {
