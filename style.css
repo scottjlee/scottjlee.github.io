@@ -5531,6 +5531,15 @@ body.loaded:after {
     margin-right: -2px;
 }
 
+.spotify-icon {
+    margin-left: -0.7px;
+}
+
+.globe-icon {
+    margin-left: -2px;
+    margin-right: -3px;
+}
+
 .link-underline:hover {
     text-decoration: underline;
 }
