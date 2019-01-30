@@ -5619,6 +5619,10 @@ h6.lineheight-25 {
     padding-bottom: 70px;
 }
 
+.berkeleytime {
+    margin-bottom: 60px;
+}
+
 @media (max-width:992px) {
     .no-bottom {
         margin-bottom: 0px;
@@ -5628,6 +5632,10 @@ h6.lineheight-25 {
     }
 
     .song-class {
+        margin-bottom: 60px;
+    }
+
+    .berkeleytime {
         margin-bottom: 60px;
     }
 
@@ -5657,6 +5665,9 @@ h6.lineheight-25 {
         margin-bottom: 30px;
     }
 
+    .berkeleytime {
+        margin-bottom: 30px;
+    }
 
     .small-bump {
         margin-bottom: 30px;
